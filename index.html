@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Royal Wedding Invitation | Sowmya &amp; Rahul</title>
+  
+  <!-- SEO & Social Sharing (WhatsApp, Facebook, Twitter, iMessage) -->
+  <meta name="description" content="With joy in our hearts, we invite you to celebrate the royal wedding of Sowmya &amp; Rahul on Sunday, 14 December 2026 at Sri Meenakshi Sundareswarar Thirumana Mandapam, Chennai." />
+  <meta name="theme-color" content="#24050a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Royal Wedding Invitation | Sowmya &amp; Rahul" />
+  <meta property="og:description" content="We request the honour of your presence at the auspicious wedding celebration of Sowmya &amp; Rahul. Sunday, 14 December 2026." />
+  <meta property="og:image" content="couple.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Royal Wedding Invitation | Sowmya &amp; Rahul" />
+  <meta name="twitter:description" content="We request the honour of your presence at the auspicious wedding celebration of Sowmya &amp; Rahul." />
+  <meta name="twitter:image" content="couple.png" />
+
+  <!-- Favicon & PWA App Icons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+Tamil:wght@400;600;700&family=Parisienne&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="couple.png" as="image" type="image/png" />
+  <link rel="preload" href="music.mp3" as="audio" />
+</head>
+<body class="loading">
+
+  <!-- Ambient audio track (auto-played on envelope open) -->
+  <audio id="bg-music" src="music.mp3" preload="auto" loop></audio>
+
+  <!-- Audio control toggle button -->
+  <button id="music-btn" class="music-toggle" aria-label="Toggle music" title="Toggle Music">
+    <div class="sound-wave">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <span class="music-label">Music</span>
+  </button>
+
+  <!-- =========================================================
+       1. ENVELOPE INTRO SCREEN (Wax-Seal Starting Experience)
+       ========================================================= -->
+  <div id="intro" class="intro-screen" aria-label="Wedding Invitation Envelope">
+    <div class="intro-backdrop"></div>
+
+    <div class="envelope-container">
+      <div class="envelope-glow"></div>
+      
+      <div class="envelope" id="envelope">
+        <!-- Inside lining -->
+        <div class="env-inside">
+          <div class="env-inside-pattern"></div>
+        </div>
+
+        <!-- Radiant light burst & god rays -->
+        <div class="env-light-burst" id="light-burst">
+          <div class="god-ray ray-1"></div>
+          <div class="god-ray ray-2"></div>
+          <div class="god-ray ray-3"></div>
+          <div class="god-ray ray-4"></div>
+          <div class="god-ray ray-5"></div>
+          <div class="god-ray ray-6"></div>
+          <div class="central-glow"></div>
+        </div>
+
+        <!-- Envelope Flaps with 3D transformations -->
+        <div class="env-flap flap-left">
+          <svg class="flap-svg side-flap-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
+            <polygon points="0,0 200,200 0,400" fill="#2d080e" />
+            <polygon points="0,0 200,200 0,400" fill="url(#velvet-grad-left)" />
+            <polyline points="0,0 200,200 0,400" stroke="url(#gold-edge)" stroke-width="2" fill="none" />
+          </svg>
+          <div class="flap-filigree filigree-left">
+            <svg viewBox="0 0 160 360" class="foil-art" aria-hidden="true"><use href="#ornate-vine" /></svg>
+          </div>
+        </div>
+
+        <div class="env-flap flap-right">
+          <svg class="flap-svg side-flap-svg" viewBox="0 0 200 400" preserveAspectRatio="none">
+            <polygon points="200,0 0,200 200,400" fill="#29070c" />
+            <polygon points="200,0 0,200 200,400" fill="url(#velvet-grad-right)" />
+            <polyline points="200,0 0,200 200,400" stroke="url(#gold-edge)" stroke-width="2" fill="none" />
+          </svg>
+          <div class="flap-filigree filigree-right">
+            <svg viewBox="0 0 160 360" class="foil-art mirrored" aria-hidden="true"><use href="#ornate-vine" /></svg>
+          </div>
+        </div>
+
+        <div class="env-flap flap-bottom">
+          <svg class="flap-svg" viewBox="0 0 400 240" preserveAspectRatio="none">
+            <polygon points="0,240 200,80 400,240" fill="#24060b" />
+            <polygon points="0,240 200,80 400,240" fill="url(#velvet-grad-bottom)" />
+            <polyline points="0,240 200,80 400,240" stroke="url(#gold-edge)" stroke-width="2" fill="none" />
+          </svg>
+          <div class="flap-filigree filigree-bottom">
+            <svg viewBox="0 0 280 100" class="foil-art-bottom" aria-hidden="true"><use href="#bottom-scroll" /></svg>
+          </div>
+        </div>
+
+        <div class="env-flap flap-top" id="flap-top">
+          <svg class="flap-svg" viewBox="0 0 400 240" preserveAspectRatio="none">
+            <polygon points="0,0 200,200 400,0" fill="#380a12" />
+            <polygon points="0,0 200,200 400,0" fill="url(#velvet-grad-top)" />
+            <polyline points="0,0 200,200 400,0" stroke="url(#gold-edge)" stroke-width="2.5" fill="none" />
+          </svg>
+        </div>
+
+        <!-- 3D Wax Seal with loading ring & monogram -->
+        <div class="seal-container" id="seal-trigger" role="button" tabindex="0" aria-label="Tap to open wedding invitation">
+          <div class="seal-halo"></div>
+          
+          <svg class="seal-progress-ring" viewBox="0 0 130 130" aria-hidden="true">
+            <circle cx="65" cy="65" r="59" class="ring-track" />
+            <circle cx="65" cy="65" r="59" class="ring-progress" id="ring-progress" />
+          </svg>
+
+          <div class="wax-stamp" id="wax-stamp">
+            <svg viewBox="0 0 120 120" class="wax-svg" aria-hidden="true">
+              <defs>
+                <radialGradient id="waxGrad" cx="35%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#fff8eb" />
+                  <stop offset="30%" stop-color="#f5e1c8" />
+                  <stop offset="70%" stop-color="#d6b088" />
+                  <stop offset="100%" stop-color="#a4774e" />
+                </radialGradient>
+                <radialGradient id="waxInnerGrad" cx="40%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#faedd9" />
+                  <stop offset="60%" stop-color="#dfbd99" />
+                  <stop offset="100%" stop-color="#b88d64" />
+                </radialGradient>
+                <filter id="waxShadow" x="-20%" y="-20%" width="150%" height="150%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#050102" flood-opacity="0.75" />
+                  <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#ffefd5" flood-opacity="0.3" />
+                </filter>
+              </defs>
+              <path d="M 105.0 60.0 Q 105.9 69.13 103.19 72.94 Q 100.47 76.76 99.28 81.11 Q 98.08 85.45 94.20 87.89 Q 90.33 90.33 88.08 94.50 Q 85.83 98.66 81.60 100.30 Q 77.37 101.94 72.90 102.16 Q 68.43 102.37 64.22 104.78 Q 60.0 107.2 55.67 105.38 Q 51.34 103.55 46.79 103.21 Q 42.24 102.87 39.14 99.36 Q 36.05 95.84 31.94 94.00 Q 27.83 92.17 24.38 89.14 Q 20.92 86.11 20.37 81.38 Q 19.81 76.65 17.74 72.73 Q 15.67 68.82 16.23 64.41 Q 16.8 60.0 15.55 55.45 Q 14.3 50.91 16.78 47.02 Q 19.26 43.12 19.97 38.42 Q 20.67 33.72 24.92 31.45 Q 29.17 29.17 31.92 25.62 Q 34.67 22.08 39.11 21.17 Q 43.54 20.27 47.22 17.23 Q 50.89 14.2 55.45 14.85 Q 60.0 15.5 64.58 14.75 Q 69.15 14.0 72.88 16.95 Q 76.61 19.9 80.89 21.11 Q 85.17 22.33 87.90 25.85 Q 90.62 29.38 94.89 31.60 Q 99.16 33.83 99.86 38.52 Q 100.56 43.2 102.79 47.12 Q 105.02 51.05 105.01 55.52 Z" 
+                    fill="url(#waxGrad)" filter="url(#waxShadow)" />
+              <circle cx="60" cy="60" r="35" fill="url(#waxInnerGrad)" stroke="#cda47b" stroke-width="1.2" />
+              <circle cx="60" cy="60" r="30" fill="none" stroke="#ba8e63" stroke-width="0.8" stroke-dasharray="2 2" />
+              <text x="60" y="69" class="seal-initials" text-anchor="middle">S&amp;R</text>
+            </svg>
+          </div>
+
+          <div class="seal-status">
+            <span class="seal-pct" id="seal-pct">0%</span>
+            <span class="seal-prompt" id="seal-prompt">Tap to Open</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Reusable SVG definitions for royal gold artwork -->
+  <svg width="0" height="0" style="position:absolute;pointer-events:none" aria-hidden="true">
+    <defs>
+      <linearGradient id="gold-edge" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#faecc1" />
+        <stop offset="35%" stop-color="#dfb76c" />
+        <stop offset="70%" stop-color="#ad7f30" />
+        <stop offset="100%" stop-color="#fdf4db" />
+      </linearGradient>
+
+      <linearGradient id="velvet-grad-top" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.06)" />
+        <stop offset="70%" stop-color="rgba(0,0,0,0.25)" />
+        <stop offset="100%" stop-color="rgba(0,0,0,0.55)" />
+      </linearGradient>
+      <linearGradient id="velvet-grad-left" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.04)" />
+        <stop offset="100%" stop-color="rgba(0,0,0,0.4)" />
+      </linearGradient>
+      <linearGradient id="velvet-grad-right" x1="100%" y1="50%" x2="0%" y2="50%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.04)" />
+        <stop offset="100%" stop-color="rgba(0,0,0,0.4)" />
+      </linearGradient>
+      <linearGradient id="velvet-grad-bottom" x1="50%" y1="100%" x2="50%" y2="0%">
+        <stop offset="0%" stop-color="rgba(0,0,0,0.45)" />
+        <stop offset="100%" stop-color="rgba(0,0,0,0.15)" />
+      </linearGradient>
+
+      <g id="ornate-vine" fill="url(#gold-edge)" stroke="url(#gold-edge)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <path fill="none" stroke-width="2" d="M 20 340 C 45 280, 85 240, 70 180 S 110 90, 80 20" />
+        <path d="M 80 20 C 65 6, 75 -8, 80 -18 C 85 -8, 95 6, 80 20 Z" />
+        <path d="M 80 20 C 62 12, 52 -2, 55 -16 C 68 -10, 77 4, 80 20 Z" />
+        <path d="M 80 20 C 98 12, 108 -2, 105 -16 C 92 -10, 83 4, 80 20 Z" />
+        <path d="M 80 22 C 58 18, 42 6, 40 -8 C 58 -6, 72 6, 80 22 Z" />
+        <path d="M 80 22 C 102 18, 118 6, 120 -8 C 102 -6, 88 6, 80 22 Z" />
+        <path d="M 75 140 C 50 130, 36 108, 32 86 C 58 92, 72 112, 75 140 Z" />
+        <path d="M 72 190 C 98 180, 114 158, 118 136 C 92 142, 78 162, 72 190 Z" />
+        <path d="M 68 240 C 42 230, 28 208, 24 186 C 50 192, 64 212, 68 240 Z" />
+        <path d="M 60 290 C 86 280, 102 258, 106 236 C 80 242, 66 262, 60 290 Z" />
+        <circle cx="28" cy="84" r="3.5" />
+        <circle cx="120" cy="134" r="3.5" />
+        <circle cx="20" cy="184" r="3.5" />
+        <circle cx="108" cy="234" r="3.5" />
+      </g>
+
+      <g id="bottom-scroll" fill="url(#gold-edge)" stroke="url(#gold-edge)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <path fill="none" stroke-width="2" d="M 15 85 C 80 50, 120 44, 140 42 C 160 44, 200 50, 265 85" />
+        <path d="M 140 42 C 130 24, 134 8, 140 -6 C 146 8, 150 24, 140 42 Z" />
+        <path d="M 140 42 C 122 36, 112 22, 110 6 C 126 12, 136 26, 140 42 Z" />
+        <path d="M 140 42 C 158 36, 168 22, 170 6 C 154 12, 144 26, 140 42 Z" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- =========================================================
+       2. FIXED CINEMATIC CANVAS & VIGNETTE
+       ========================================================= -->
+  <canvas id="scene"></canvas>
+  <div class="vignette"></div>
+
+  <!-- =========================================================
+       3. SCROLL TRACK & INTERACTIVE CONTENT PANELS
+       ========================================================= -->
+  <div id="track">
+
+    <!-- Panel 1: Start Invitation Card (Like Reference Image 2) -->
+    <div class="panel" data-start="0" data-end="0.18">
+      <div class="panel-card intro-panel-card" id="start-card">
+        <p class="eyebrow">Shree Ganeshay Namah</p>
+        <h2 class="script" id="main-script-title" title="Click to preview different fonts">You are Invited</h2>
+        <p class="subtitle">to the auspicious wedding celebration</p>
+        <div class="scroll-indicator" id="scroll-prompt" role="button" tabindex="0" aria-label="Scroll to enter the Mandapam">
+          <div class="scroll-arrow" aria-hidden="true"></div>
+          <span class="scroll-text">Scroll to enter the Mandapam</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 2: Couple Spotlight -->
+    <div class="panel" data-start="0.28" data-end="0.48">
+      <div class="panel-card">
+        <p class="eyebrow">Together with their Families</p>
+        <div class="names-wrap">
+          <span class="person-name">Sowmya</span>
+          <span class="ampersand">&amp;</span>
+          <span class="person-name">Rahul</span>
+        </div>
+        <p class="subtitle">Request the honour of your presence at their wedding</p>
+      </div>
+    </div>
+
+    <!-- Panel 3: Auspicious Muhurtham -->
+    <div class="panel" data-start="0.55" data-end="0.75">
+      <div class="panel-card">
+        <p class="eyebrow">Auspicious Muhurtham</p>
+        <div class="date-display">Sunday, 14 December 2026</div>
+        <p class="subtitle">Sri Meenakshi Sundareswarar Mandapam</p>
+      </div>
+    </div>
+
+    <!-- Panel 4: Venue & Action Buttons -->
+    <div class="panel" data-start="0.80" data-end="1.0">
+      <div class="panel-card venue-card">
+        <p class="eyebrow">The Destination</p>
+        <h3 class="venue-title">Sri Meenakshi Sundareswarar Mandapam</h3>
+        <p class="venue-location">No. 42, Temple Ring Road, Chennai, Tamil Nadu</p>
+        <p class="script-small">Your presence &amp; blessings are our greatest treasure</p>
+        <div class="action-buttons">
+          <button class="btn-gold" id="btn-calendar" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+            Save Date (.ics)
+          </button>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn-outline">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Google Maps
+          </a>
+          <a href="https://wa.me/?text=Hello,%20we%20are%20delighted%20to%20attend%20the%20wedding%20of%20Sowmya%20and%20Rahul!" target="_blank" rel="noopener" class="btn-gold">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+            RSVP WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================================================
+       3. INVITATION WEBSITE DETAILS SECTION (Shown After Video)
+       ========================================================= -->
+  <main id="details-section" class="details-section">
+
+    <!-- Traditional South Indian Wedding Marigold & Mango Leaf Floral Toran -->
+    <div class="wedding-toran-bar" aria-hidden="true">
+      <svg class="toran-svg" viewBox="0 0 1200 42" preserveAspectRatio="none">
+        <path d="M0,0 L1200,0 L1200,8 C1100,26 1000,26 900,8 C800,26 700,26 600,8 C500,26 400,26 300,8 C200,26 100,26 0,8 Z" fill="#d97706" opacity="0.4"/>
+        <path d="M0,0 L1200,0 L1200,6 C1100,20 1000,20 900,6 C800,20 700,20 600,6 C500,20 400,20 300,6 C200,20 100,20 0,6 Z" fill="#991b1b" opacity="0.85"/>
+        <circle cx="150" cy="16" r="6" fill="#f59e0b"/>
+        <circle cx="150" cy="16" r="3" fill="#b45309"/>
+        <circle cx="300" cy="6" r="5" fill="#f59e0b"/>
+        <circle cx="450" cy="16" r="6" fill="#f59e0b"/>
+        <circle cx="450" cy="16" r="3" fill="#b45309"/>
+        <circle cx="600" cy="6" r="5" fill="#f59e0b"/>
+        <circle cx="750" cy="16" r="6" fill="#f59e0b"/>
+        <circle cx="750" cy="16" r="3" fill="#b45309"/>
+        <circle cx="900" cy="6" r="5" fill="#f59e0b"/>
+        <circle cx="1050" cy="16" r="6" fill="#f59e0b"/>
+        <circle cx="1050" cy="16" r="3" fill="#b45309"/>
+      </svg>
+    </div>
+
+    <!-- Auspicious Invocation Header -->
+    <header class="details-header">
+      <div class="ganesha-symbol">
+        <span class="om-sign">ॐ</span>
+        <div class="kural-wrap">
+          <p class="thirukkural">
+            “ அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை<br>
+            பண்பும் பயனும் அது ”
+          </p>
+          <span class="kural-ref">— திருக்குறள் (45)</span>
+        </div>
+      </div>
+
+      <p class="section-eyebrow">With the Divine Blessings of Lord Ganesha &amp; Our Ancestors</p>
+      <h1 class="wedding-headline">Wedding Invitation</h1>
+
+      <!-- Royal Couple Centerpiece (Natural Portrait, No Circles) -->
+      <div class="couple-spotlight-container">
+        <div class="couple-portrait-wrapper">
+          <img src="couple.png" alt="Sowmya &amp; Rahul" class="couple-avatar-img" />
+        </div>
+
+        <!-- The Grand Couple Typography -->
+        <div class="couple-spotlight">
+          <div class="name-block">
+            <h2 class="couple-name">Sowmya</h2>
+            <p class="parentage">Daughter of Smt. Lakshmi &amp; Sri. Narayanan</p>
+          </div>
+          <div class="union-ampersand">&amp;</div>
+          <div class="name-block">
+            <h2 class="couple-name">Rahul</h2>
+            <p class="parentage">Son of Smt. Radha &amp; Sri. Krishnan</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="invitation-text">
+        Request the pleasure of your company and blessings as we unite our hearts and lives in sacred matrimony.
+      </p>
+    </header>
+
+    <!-- Wedding Countdown Timer -->
+    <section class="countdown-section">
+      <div class="countdown-card">
+        <h3 class="countdown-title">Counting Down to the Big Day</h3>
+        <div class="countdown-grid" id="countdown-grid">
+          <div class="time-box">
+            <span class="time-val" id="cd-days">00</span>
+            <span class="time-lbl">Days</span>
+          </div>
+          <div class="time-sep">:</div>
+          <div class="time-box">
+            <span class="time-val" id="cd-hours">00</span>
+            <span class="time-lbl">Hours</span>
+          </div>
+          <div class="time-sep">:</div>
+          <div class="time-box">
+            <span class="time-val" id="cd-mins">00</span>
+            <span class="time-lbl">Mins</span>
+          </div>
+          <div class="time-sep">:</div>
+          <div class="time-box">
+            <span class="time-val" id="cd-secs">00</span>
+            <span class="time-lbl">Secs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Auspicious Events Timeline Cards -->
+    <section class="events-section">
+      <h3 class="section-title">Auspicious Ceremonies</h3>
+      <div class="events-grid">
+        
+        <!-- Muhurtham Card (Animated from Left) -->
+        <article class="event-card event-card-left highlight-card">
+          <div class="card-shimmer"></div>
+          <span class="event-step">I</span>
+          <span class="event-badge">Sacred Union</span>
+          <h4 class="event-name">Muhurtham</h4>
+          <p class="event-date">Sunday, 14 December 2026</p>
+          <p class="event-time">10:30 AM to 11:45 AM (Dhanur Lagnam)</p>
+          <div class="event-divider"></div>
+          <p class="event-desc">
+            The auspicious Thiru Mangalyam tying ceremony in the presence of Agni Devan and family elders.
+          </p>
+        </article>
+
+        <!-- Kalyana Virundhu Card (Animated from Center) -->
+        <article class="event-card event-card-center">
+          <div class="card-shimmer"></div>
+          <span class="event-step">II</span>
+          <span class="event-badge">Traditional Feast</span>
+          <h4 class="event-name">Kalyana Virundhu</h4>
+          <p class="event-date">Sunday, 14 December 2026</p>
+          <p class="event-time">12:00 PM Onwards</p>
+          <div class="event-divider"></div>
+          <p class="event-desc">
+            Grand South Indian traditional feast served on fresh banana plantain leaves.
+          </p>
+        </article>
+
+        <!-- Evening Reception Card (Animated from Right) -->
+        <article class="event-card event-card-right">
+          <div class="card-shimmer"></div>
+          <span class="event-step">III</span>
+          <span class="event-badge">Celebration</span>
+          <h4 class="event-name">Grand Reception</h4>
+          <p class="event-date">Sunday, 14 December 2026</p>
+          <p class="event-time">6:30 PM Onwards</p>
+          <div class="event-divider"></div>
+          <p class="event-desc">
+            An evening filled with music, blessings, photography, and delightful dinner banquet.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Venue & Location Section -->
+    <section class="venue-section">
+      <div class="venue-container">
+        <!-- Corner filigree flourishes -->
+        <div class="corner-flourish corner-tl">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none"><path d="M4 36 V12 C4 7.57 7.57 4 12 4 H36 M10 32 V14 C10 11.79 11.79 10 14 10 H32" stroke="#c99a3c" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="2.5" fill="#9e1828"/></svg>
+        </div>
+        <div class="corner-flourish corner-tr">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none"><path d="M4 36 V12 C4 7.57 7.57 4 12 4 H36 M10 32 V14 C10 11.79 11.79 10 14 10 H32" stroke="#c99a3c" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="2.5" fill="#9e1828"/></svg>
+        </div>
+        <div class="corner-flourish corner-bl">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none"><path d="M4 36 V12 C4 7.57 7.57 4 12 4 H36 M10 32 V14 C10 11.79 11.79 10 14 10 H32" stroke="#c99a3c" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="2.5" fill="#9e1828"/></svg>
+        </div>
+        <div class="corner-flourish corner-br">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none"><path d="M4 36 V12 C4 7.57 7.57 4 12 4 H36 M10 32 V14 C10 11.79 11.79 10 14 10 H32" stroke="#c99a3c" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="2.5" fill="#9e1828"/></svg>
+        </div>
+
+        <!-- Mandapam Arch & Kalasam Top Motif -->
+        <div class="venue-crest">
+          <svg class="mandapam-gopuram-svg" viewBox="0 0 120 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 2 L63 9 L57 9 Z" fill="#9e1828"/>
+            <circle cx="60" cy="12" r="2.5" fill="#c99a3c"/>
+            <path d="M50 16 H70 L68 22 H52 Z" fill="#dfb76c"/>
+            <path d="M42 22 C48 18 72 18 78 22 L75 28 H45 Z" fill="#c99a3c"/>
+            <path d="M30 28 C45 22 75 22 90 28 L86 34 H34 Z" fill="#b8860b"/>
+            <path d="M15 36 C45 28 75 28 105 36" stroke="#c99a3c" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="60" cy="27" r="2.5" fill="#9e1828"/>
+          </svg>
+        </div>
+
+        <p class="section-eyebrow">✦ The Auspicious Destination ✦</p>
+
+        <h3 class="venue-main-title">
+          <span class="venue-title-sub">Sri Meenakshi Sundareswarar</span>
+          <span class="venue-title-accent">MANDAPAM</span>
+        </h3>
+
+        <div class="venue-divider">
+          <span class="divider-line"></span>
+          <span class="divider-gem">❖</span>
+          <span class="divider-line"></span>
+        </div>
+
+        <!-- Venue Location Info Box -->
+        <div class="venue-address-box">
+          <div class="venue-pin-badge">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="#9e1828">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </div>
+          <p class="venue-address-line primary">No. 42, Temple Ring Road, Near Golden Enclave</p>
+          <p class="venue-address-line secondary">Chennai, Tamil Nadu — 600040</p>
+        </div>
+
+        <!-- Action Buttons Grid -->
+        <div class="venue-actions">
+          <a href="#calendar" class="venue-btn btn-calendar-gold" id="btn-calendar" title="Download Calendar Invite (.ics)">
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+            </span>
+            <span class="btn-text">
+              <span class="btn-subtext">Add to Calendar</span>
+              <span class="btn-label">Save Date (.ics)</span>
+            </span>
+          </a>
+
+          <a href="https://maps.google.com/?q=Sri+Meenakshi+Sundareswarar+Mandapam+Chennai" target="_blank" rel="noopener" class="venue-btn btn-maps-crimson" title="Open in Google Maps">
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </span>
+            <span class="btn-text">
+              <span class="btn-subtext">Google Maps</span>
+              <span class="btn-label">Get Directions</span>
+            </span>
+          </a>
+
+          <a href="https://wa.me/?text=Namaste!%20We%20are%20delighted%20to%20attend%20the%20wedding%20celebration%20of%20Sowmya%20and%20Rahul!" target="_blank" rel="noopener" class="venue-btn btn-whatsapp-emerald" title="Send WhatsApp Message">
+            <span class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/></svg>
+            </span>
+            <span class="btn-text">
+              <span class="btn-subtext">Direct Message</span>
+              <span class="btn-label">RSVP WhatsApp</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warm Footer Blessings -->
+    <footer class="details-footer">
+      <div class="footer-ornament">
+        <span class="flourish-stem"></span>
+        <span class="flourish-lotus">𑁍</span>
+        <span class="flourish-stem"></span>
+      </div>
+      <p class="blessing-script" id="blessing-title" title="Click to switch font preview">
+        “Your presence, blessings &amp; love are our greatest treasure”
+      </p>
+      <p class="family-sign">With best compliments from near &amp; dear ones</p>
+      <button class="btn-scroll-top" id="btn-scroll-top" title="Replay Animation">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        Replay Experience
+      </button>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

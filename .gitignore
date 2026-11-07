@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Internal tools & extraction scripts (not needed for deployment)
+tools/
+*.pyc
+__pycache__/
+
+# Logs
+*.log
