@@ -1728,8 +1728,8 @@ body.loading {
 
 .studio-eyebrow {
   font-family: 'Cinzel', serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #8c1d2e;
   font-weight: 700;
@@ -2181,8 +2181,8 @@ body.loading {
     height: 42px;
   }
   .studio-eyebrow {
-    font-size: 0.58rem;
-    letter-spacing: 0.16em;
+    font-size: 0.54rem;
+    letter-spacing: 0.12em;
   }
   .studio-name {
     font-size: 1.05rem;
