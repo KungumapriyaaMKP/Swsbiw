@@ -1672,6 +1672,103 @@ body.loading {
   box-shadow: 0 6px 20px rgba(130, 85, 30, 0.22);
 }
 
+/* Studio Developer Credits */
+.studio-credits {
+  margin-top: 42px;
+  padding-top: 10px;
+}
+
+.studio-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  max-width: 220px;
+  margin: 0 auto 16px;
+}
+
+.studio-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 154, 60, 0.45), transparent);
+}
+
+.studio-sparkle {
+  color: #c99a3c;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.studio-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.78rem, 1.3vw, 0.9rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7a5833;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.studio-brand {
+  color: #8c1d2e;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(140, 29, 46, 0.4);
+  padding-bottom: 1px;
+  transition: all 0.25s ease;
+}
+
+.studio-brand:hover {
+  color: #b8860b;
+  border-bottom-color: #b8860b;
+}
+
+.studio-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.studio-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(212, 168, 83, 0.4);
+  color: #5c3b1e;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(130, 85, 30, 0.05);
+}
+
+.studio-pill svg {
+  color: #c99a3c;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.studio-pill:hover {
+  background: #faecc1;
+  border-color: #b8860b;
+  color: #24050a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.18);
+}
+
+.studio-pill:hover svg {
+  color: #8c1d2e;
+  transform: scale(1.12);
+}
+
 /* =========================================================
    COMPREHENSIVE MOBILE RESPONSIVENESS (PHONES & TABLETS)
    ========================================================= */
