@@ -1672,101 +1672,148 @@ body.loading {
   box-shadow: 0 6px 20px rgba(130, 85, 30, 0.22);
 }
 
-/* Studio Developer Credits */
-.studio-credits {
-  margin-top: 42px;
-  padding-top: 10px;
+/* Studio Developer Credits: Flagship Card (Exact Match to Reference Banner) */
+.studio-flagship-card {
+  max-width: 680px;
+  margin: 38px auto 14px;
+  background: #ffffff;
+  border: 1px solid rgba(212, 168, 83, 0.45);
+  box-shadow: 0 4px 18px rgba(130, 85, 30, 0.08);
+  border-radius: 4px;
+  padding: 14px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all 0.3s ease;
 }
 
-.studio-divider {
+.studio-flagship-card:hover {
+  box-shadow: 0 6px 24px rgba(184, 134, 11, 0.16);
+  border-color: #b8860b;
+}
+
+.studio-flagship-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.studio-logo-box {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(140, 29, 46, 0.25);
+  background: #f2eaf7;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  max-width: 220px;
-  margin: 0 auto 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-.studio-line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(201, 154, 60, 0.45), transparent);
+.studio-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.studio-sparkle {
-  color: #c99a3c;
-  font-size: 0.85rem;
-  opacity: 0.8;
+.studio-text-col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
-.studio-tagline {
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(0.78rem, 1.3vw, 0.9rem);
-  letter-spacing: 0.12em;
+.studio-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #7a5833;
-  font-weight: 500;
-  margin-bottom: 14px;
-}
-
-.studio-brand {
   color: #8c1d2e;
   font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(140, 29, 46, 0.4);
-  padding-bottom: 1px;
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.studio-name {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24050a;
+  margin: 0;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.studio-flagship-right {
+  flex-shrink: 0;
+}
+
+.studio-visit-link {
+  font-family: 'Cinzel', serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8c1d2e;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+  white-space: nowrap;
   transition: all 0.25s ease;
 }
 
-.studio-brand:hover {
+.studio-visit-link:hover {
   color: #b8860b;
-  border-bottom-color: #b8860b;
+  text-decoration-color: #b8860b;
 }
 
-.studio-links {
+/* Quick Contact Social Strip */
+.studio-social-strip {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
-  max-width: 640px;
-  margin: 0 auto;
+  max-width: 680px;
+  margin: 0 auto 20px;
 }
 
-.studio-pill {
+.studio-social-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(212, 168, 83, 0.4);
+  border: 1px solid rgba(212, 168, 83, 0.35);
   color: #5c3b1e;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  padding: 6px 14px;
+  letter-spacing: 0.03em;
+  padding: 5px 13px;
   border-radius: 20px;
   transition: all 0.25s ease;
-  box-shadow: 0 2px 6px rgba(130, 85, 30, 0.05);
+  box-shadow: 0 2px 6px rgba(130, 85, 30, 0.04);
 }
 
-.studio-pill svg {
+.studio-social-pill svg {
   color: #c99a3c;
   transition: transform 0.25s ease, color 0.25s ease;
 }
 
-.studio-pill:hover {
+.studio-social-pill:hover {
   background: #faecc1;
   border-color: #b8860b;
   color: #24050a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.18);
+  box-shadow: 0 4px 10px rgba(184, 134, 11, 0.16);
 }
 
-.studio-pill:hover svg {
+.studio-social-pill:hover svg {
   color: #8c1d2e;
-  transform: scale(1.12);
+  transform: scale(1.1);
 }
 
 /* =========================================================
@@ -2122,6 +2169,36 @@ body.loading {
     font-size: 0.74rem;
     min-height: 44px;
   }
+
+  /* Studio Flagship Card Mobile */
+  .studio-flagship-card {
+    padding: 12px 14px;
+    gap: 12px;
+    margin: 30px auto 14px;
+  }
+  .studio-logo-box {
+    width: 42px;
+    height: 42px;
+  }
+  .studio-eyebrow {
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+  }
+  .studio-name {
+    font-size: 1.05rem;
+  }
+  .studio-visit-link {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+  }
+  .studio-social-strip {
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+  .studio-social-pill {
+    padding: 4px 10px;
+    font-size: 0.68rem;
+  }
 }
 
 /* Extra Compact Phones (max-width: 360px - e.g. iPhone SE, smaller Androids) */
@@ -2153,5 +2230,19 @@ body.loading {
   }
   .venue-container {
     padding: 26px 10px 20px;
+  }
+  .studio-flagship-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 14px 10px;
+    gap: 10px;
+  }
+  .studio-flagship-left {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .studio-text-col {
+    text-align: center;
   }
 }
