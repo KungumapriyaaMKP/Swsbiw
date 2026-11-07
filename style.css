@@ -1674,34 +1674,34 @@ body.loading {
 
 /* Studio Developer Credits: Flagship Card (Exact Match to Reference Banner) */
 .studio-flagship-card {
-  max-width: 680px;
+  max-width: 520px;
   margin: 0 auto;
   background: #ffffff;
   border: 1px solid rgba(212, 168, 83, 0.45);
-  box-shadow: 0 4px 18px rgba(130, 85, 30, 0.08);
+  box-shadow: 0 3px 14px rgba(130, 85, 30, 0.08);
   border-radius: 4px;
-  padding: 14px 26px;
+  padding: 9px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 14px;
   transition: all 0.3s ease;
 }
 
 .studio-flagship-card:hover {
-  box-shadow: 0 6px 24px rgba(184, 134, 11, 0.16);
+  box-shadow: 0 5px 20px rgba(184, 134, 11, 0.16);
   border-color: #b8860b;
 }
 
 .studio-flagship-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .studio-logo-box {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
   border-radius: 3px;
   overflow: hidden;
@@ -1728,23 +1728,23 @@ body.loading {
 
 .studio-eyebrow {
   font-family: 'Cinzel', serif;
-  font-size: clamp(0.58rem, 1.1vw, 0.64rem);
-  letter-spacing: 0.14em;
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #8c1d2e;
   font-weight: 700;
-  margin-bottom: 3px;
-  line-height: 1.2;
+  margin-bottom: 2px;
+  line-height: 1.15;
 }
 
 .studio-name {
   font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.25rem;
+  font-size: 0.98rem;
   font-weight: 600;
   color: #24050a;
   margin: 0;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
+  letter-spacing: 0.015em;
+  line-height: 1.15;
 }
 
 .studio-flagship-right {
@@ -1753,12 +1753,12 @@ body.loading {
 
 .studio-visit-link {
   font-family: 'Cinzel', serif;
-  font-size: 0.74rem;
-  letter-spacing: 0.22em;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #8c1d2e;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
   font-weight: 700;
   white-space: nowrap;
   transition: all 0.25s ease;
@@ -1776,23 +1776,23 @@ body.loading {
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
-  max-width: 680px;
-  margin: 24px auto 16px;
+  max-width: 520px;
+  margin: 18px auto 12px;
 }
 
 .studio-social-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(212, 168, 83, 0.35);
   color: #5c3b1e;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 5px 13px;
+  letter-spacing: 0.02em;
+  padding: 4px 11px;
   border-radius: 20px;
   transition: all 0.25s ease;
   box-shadow: 0 2px 6px rgba(130, 85, 30, 0.04);
@@ -2172,32 +2172,33 @@ body.loading {
 
   /* Studio Flagship Card Mobile */
   .studio-flagship-card {
-    padding: 12px 14px;
-    gap: 12px;
+    max-width: 92%;
+    padding: 7px 12px;
+    gap: 10px;
     margin: 0 auto;
   }
   .studio-logo-box {
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
   }
   .studio-eyebrow {
-    font-size: 0.50rem;
-    letter-spacing: 0.08em;
+    font-size: 0.44rem;
+    letter-spacing: 0.07em;
   }
   .studio-name {
-    font-size: 1.05rem;
+    font-size: 0.86rem;
   }
   .studio-visit-link {
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
+    font-size: 0.56rem;
+    letter-spacing: 0.10em;
   }
   .studio-social-strip {
-    gap: 6px;
-    margin: 18px auto 12px;
+    gap: 5px;
+    margin: 14px auto 10px;
   }
   .studio-social-pill {
-    padding: 4px 10px;
-    font-size: 0.68rem;
+    padding: 3px 8px;
+    font-size: 0.62rem;
   }
 }
 
