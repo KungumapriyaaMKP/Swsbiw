@@ -818,7 +818,7 @@ body.loading {
   background-image: 
     radial-gradient(circle at 50% 0%, rgba(255, 253, 248, 0.94) 0%, rgba(250, 244, 232, 0.96) 50%, rgba(244, 235, 220, 0.98) 100%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 10 C45 25 60 25 40 45 C20 25 35 25 40 10 Z' fill='none' stroke='%23c99a3c' stroke-width='0.8' opacity='0.12'/%3E%3Ccircle cx='40' cy='40' r='2.5' fill='%23c99a3c' opacity='0.15'/%3E%3Cpath d='M10 40 C25 45 25 60 45 40 C25 20 25 35 10 40 Z' fill='none' stroke='%23c99a3c' stroke-width='0.8' opacity='0.12'/%3E%3Cpath d='M70 40 C55 45 55 60 35 40 C55 20 55 35 70 40 Z' fill='none' stroke='%23c99a3c' stroke-width='0.8' opacity='0.12'/%3E%3Cpath d='M40 70 C45 55 60 55 40 35 C20 55 35 55 40 70 Z' fill='none' stroke='%23c99a3c' stroke-width='0.8' opacity='0.12'/%3E%3C/svg%3E");
-  padding: 85px 24px 105px;
+  padding: 85px 24px 24px;
   color: #3b281c;
   border-top: 3px solid #dfb76c;
   box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.45);
@@ -1675,7 +1675,7 @@ body.loading {
 /* Studio Developer Credits: Flagship Card (Exact Match to Reference Banner) */
 .studio-flagship-card {
   max-width: 680px;
-  margin: 38px auto 14px;
+  margin: 0 auto;
   background: #ffffff;
   border: 1px solid rgba(212, 168, 83, 0.45);
   box-shadow: 0 4px 18px rgba(130, 85, 30, 0.08);
@@ -1777,7 +1777,7 @@ body.loading {
   gap: 8px;
   flex-wrap: wrap;
   max-width: 680px;
-  margin: 0 auto 20px;
+  margin: 24px auto 16px;
 }
 
 .studio-social-pill {
@@ -1823,7 +1823,7 @@ body.loading {
 /* Tablets & Small Laptops (max-width: 900px) */
 @media (max-width: 900px) {
   .details-section {
-    padding: 70px 20px 90px;
+    padding: 70px 20px 20px;
   }
   .events-grid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1948,7 +1948,7 @@ body.loading {
 
   /* Invitation Details Section */
   .details-section {
-    padding: 55px 14px 75px;
+    padding: 55px 14px 14px;
   }
   .details-header {
     margin-bottom: 35px;
@@ -2174,7 +2174,7 @@ body.loading {
   .studio-flagship-card {
     padding: 12px 14px;
     gap: 12px;
-    margin: 30px auto 14px;
+    margin: 0 auto;
   }
   .studio-logo-box {
     width: 42px;
@@ -2193,7 +2193,7 @@ body.loading {
   }
   .studio-social-strip {
     gap: 6px;
-    margin-bottom: 24px;
+    margin: 18px auto 12px;
   }
   .studio-social-pill {
     padding: 4px 10px;
