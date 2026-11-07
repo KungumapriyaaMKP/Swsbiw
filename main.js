@@ -335,8 +335,8 @@
         'CALSCALE:GREGORIAN',
         'METHOD:PUBLISH',
         'BEGIN:VEVENT',
-        'SUMMARY:Sowmya & Rahul - Auspicious Wedding Muhurtham',
-        'DESCRIPTION:You are cordially invited to celebrate the sacred wedding ceremony of Sowmya and Rahul.',
+        'SUMMARY:Rahul & Sowmya - Auspicious Wedding Muhurtham',
+        'DESCRIPTION:You are cordially invited to celebrate the sacred wedding ceremony of Rahul and Sowmya.',
         'LOCATION:Sri Meenakshi Sundareswarar Mandapam, Temple Ring Road, Chennai, Tamil Nadu',
         'DTSTART:20261214T050000Z',
         'DTEND:20261214T080000Z',
@@ -348,7 +348,7 @@
       const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
       const link = document.createElement('a');
       link.href = window.URL.createObjectURL(blob);
-      link.setAttribute('download', 'Sowmya-Rahul-Wedding.ics');
+      link.setAttribute('download', 'Rahul-Sowmya-Wedding.ics');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
