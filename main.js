@@ -240,7 +240,16 @@
   /* =========================================================
      5. SCROLL TEXT PANELS
      ========================================================= */
+  const trackEl = document.getElementById('track');
+
   function updatePanels(p) {
+    const trackH = trackEl ? trackEl.offsetHeight : 0;
+    const winH = window.innerHeight;
+    const trackDist = Math.max(1, trackH - winH);
+    const scrollPastTrack = Math.max(0, window.scrollY - trackDist);
+    // Smoothly fade out fixed panels as details card slides up
+    const detailsExitFade = Math.max(0, 1 - scrollPastTrack / (winH * 0.35));
+
     for (const el of panels) {
       const s = parseFloat(el.dataset.start);
       const e = parseFloat(el.dataset.end);
@@ -252,7 +261,7 @@
         const fadeOut = e >= 1 ? 1 : (e - p) / fade;
         o = Math.min(1, fadeIn, fadeOut);
       }
-      o = Math.max(0, o);
+      o = Math.max(0, o) * detailsExitFade;
 
       const lift = (1 - o) * 30 * (p < (s + e) / 2 ? 1 : -1);
       el.style.opacity = o.toFixed(3);
@@ -275,8 +284,18 @@
   }
 
   function readScroll() {
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    target = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+    if (!trackEl) return;
+    const trackH = trackEl.offsetHeight;
+    const winH = window.innerHeight;
+    const trackDist = Math.max(1, trackH - winH);
+    const scrollY = window.scrollY;
+
+    // Calibrate video playhead strictly to the dedicated video scroll track:
+    // Reach full Namaste greeting (progress = 1.0, Frame 188) at 90% of the video track
+    // so guests clearly see the couple finish Namaste and hold the greeting BEFORE
+    // the wedding details card begins sliding up over the video!
+    const rawProgress = scrollY / (trackDist * 0.90);
+    target = Math.min(1, Math.max(0, rawProgress));
     scheduleTick();
   }
 

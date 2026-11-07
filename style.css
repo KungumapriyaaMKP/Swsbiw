@@ -813,7 +813,7 @@ body.loading {
    ========================================================= */
 .details-section {
   position: relative;
-  z-index: 5;
+  z-index: 25;
   background-color: #faf5eb;
   background-image: 
     radial-gradient(circle at 50% 0%, rgba(255, 253, 248, 0.94) 0%, rgba(250, 244, 232, 0.96) 50%, rgba(244, 235, 220, 0.98) 100%),
